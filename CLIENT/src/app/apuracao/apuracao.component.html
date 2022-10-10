@@ -1,0 +1,11 @@
+<p>Resultado das eleições!</p>
+
+<ul>
+  <li style="margin-bottom: 10px; background: rgb(187, 187, 187); max-width: 500px;" *ngFor="let candidato of candidatos">
+    <h2>Nome: {{candidato.nome}}</h2>
+    <h3>Vice: {{candidato.nomeVice}}</h3>
+    <h3>Votos: {{candidato.votos.length}}</h3>
+  </li>
+</ul>
+
+<a style="margin-left: 5px;" routerLink="/home"><button>Voltar</button></a>

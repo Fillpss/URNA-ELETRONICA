@@ -1,0 +1,9 @@
+<p>Exclua um candidato!</p>
+
+<ul>
+  <li style="margin-bottom: 10px;" *ngFor="let candidato of candidatos">Nome: {{candidato.nome}} Vice: {{candidato.nomeVice}} Data: {{candidato.dataDoRegistro | date}}
+    <button style="margin-left: 15px;" (click)="ExcluirCandidato(candidato.id)">Excluir Candidato</button> 
+  </li>
+</ul>
+
+<a style="margin-left: 5px;" routerLink="/home"><button>Voltar</button></a>

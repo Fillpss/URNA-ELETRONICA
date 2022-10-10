@@ -1,0 +1,13 @@
+<p>Cadastre agora!</p>
+
+<form style="display: inline">
+  <label for="inputName">Nome</label> <br>
+  <input [(ngModel)]="nomeCandidato" type="text" id="inputName" [ngModelOptions]="{standalone: true}"> <br>
+  <label for="inputNameVice">Vice</label> <br>
+  <input  [(ngModel)]="nomeVice" type="text" id="inputNameVice" [ngModelOptions]="{standalone: true}"> <br>
+  <label for="inputSubtitle">Legenda</label> <br>
+  <textarea [(ngModel)]="subtitle" type="text" id="inputSubtitle" [ngModelOptions]="{standalone: true}"></textarea> <br>
+  <button (click)="CadastrarCandidatos()" type="submit">Cadastrar</button>
+</form>
+
+<a style="margin-left: 5px;" routerLink="/home"><button>Voltar</button></a>

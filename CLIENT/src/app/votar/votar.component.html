@@ -1,0 +1,9 @@
+<p>Vote agora!</p>
+
+<ul>
+  <li style="margin-bottom: 10px;" *ngFor="let candidato of candidatos">Nome: {{candidato.nome}} Vice: {{candidato.nomeVice}} Data: {{candidato.dataDoRegistro | date}}
+    <button style="margin-left: 15px;" (click)="Votar(candidato.id)">Votar</button> 
+  </li>
+</ul>
+
+<a style="margin-left: 5px;" routerLink="/home"><button>Voltar</button></a>
